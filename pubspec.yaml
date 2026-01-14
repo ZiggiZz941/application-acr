@@ -53,6 +53,7 @@ dev_dependencies:
   
   build_runner: ^2.4.0
   json_serializable: ^6.7.0
+  flutter_launcher_icons: "^0.13.1"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -69,6 +70,22 @@ flutter:
     - assets/images/logo_acr.png
     - assets/images/logo_acr2.jpg
 
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#D32F2F"
+  adaptive_icon_foreground: "assets/icon/foreground.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  ios_has_adaptive_icon: true
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    background_color: "#D32F2F"
+    theme_color: "#D32F2F"
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
